@@ -1,0 +1,7 @@
+machine:
+  xcode:
+    version: 9.1
+test:
+  override:
+    - ./build.sh
+    - cd out; tar -xvzf *.tar.gz; cd -
